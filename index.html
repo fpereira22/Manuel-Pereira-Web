@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuel Pereira - Fotografía</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
+
+    <!-- NAV -->
+    <nav class="fixed w-full z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i data-lucide="camera" class="text-amber-500 w-7 h-7"></i>
+                <span class="text-xl font-bold tracking-wider uppercase text-white">Manuel Pereira</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#inicio" class="text-slate-300 hover:text-amber-500 transition-colors">Inicio</a>
+                <a href="#sobre-mi" class="text-slate-300 hover:text-amber-500 transition-colors">Sobre Mí</a>
+                <a href="#galeria" class="text-slate-300 hover:text-amber-500 transition-colors">Galería</a>
+                <a href="#contacto" class="text-slate-300 hover:text-amber-500 transition-colors">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?q=80&w=2000&auto=format&fit=crop" -->
+            <img src="public/bg2.jpg" alt="Fondo Naturaleza" class="w-full h-full object-cover opacity-40" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto fade-in">
+            <p class="text-amber-500 tracking-[0.2em] uppercase text-sm mb-4 font-semibold">Portafolio Fotográfico</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
+                Capturando la Esencia <br />
+                <span class="serif italic font-normal text-slate-300">de la Naturaleza</span>
+            </h1>
+            <p class="text-slate-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Una mirada íntima a la vida silvestre y los momentos cotidianos a través del lente.
+            </p>
+            <a href="#galeria"
+                class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-amber-600/20">
+                Ver Mis Fotos
+            </a>
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 relative">
+                    <div class="w-full aspect-[3/4] rounded-lg overflow-hidden relative z-10 border border-slate-700">
+                        <img src="public/profile3.png" alt="Manuel con cámara" class="w-full h-full object-cover" />
+                    </div>
+                    <div
+                        class="absolute -bottom-6 -right-6 w-48 h-48 bg-slate-800 border border-slate-700 p-6 rounded-lg z-20 hidden md:block shadow-xl">
+                        <div class="h-full flex flex-col justify-center">
+                            <span class="text-amber-500 text-4xl font-bold serif">50+</span>
+                            <span class="text-slate-400 text-sm mt-2">Años de historia y experiencia de vida</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 serif text-white">Manuel Pereira</h2>
+                    <div class="w-20 h-1 bg-amber-500 mb-8"></div>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Nací el <strong>29 de marzo de 1969</strong> en la hermosa tierra de <strong>Paine,
+                            Chile</strong>.
+                        Profesionalmente, formo parte del equipo de <strong>ALCHI</strong>. Sin embargo, en mis tiempos
+                        libres, cambio las herramientas por mi cámara.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+                        <div
+                            class="bg-slate-800 p-4 rounded-lg border border-slate-700 text-center hover:bg-slate-750 transition-colors">
+                            <div
+                                class="mx-auto bg-slate-700 w-12 h-12 rounded-full flex items-center justify-center mb-3 text-amber-500">
+                                <!-- BirdIcon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M16 7h.01" />
+                                    <path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20" />
+                                    <path d="m20 7 2 .5-2 .5" />
+                                    <path d="M10 18v3" />
+                                    <path d="M14 17.75V21" />
+                                    <path d="M7 18a6 6 0 0 0 3.84-10.61" />
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-sm text-slate-200">Ornitología</h4>
+                        </div>
+                        <div
+                            class="bg-slate-800 p-4 rounded-lg border border-slate-700 text-center hover:bg-slate-750 transition-colors">
+                            <div
+                                class="mx-auto bg-slate-700 w-12 h-12 rounded-full flex items-center justify-center mb-3 text-amber-500">
+                                <!-- BugIcon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m8 2 1.88 1.88" />
+                                    <path d="M14.12 3.88 16 2" />
+                                    <path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1" />
+                                    <path
+                                        d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6" />
+                                    <path d="M12 20v-9" />
+                                    <path d="M6.53 9C4.6 8.8 3 7.1 3 5" />
+                                    <path d="M6 13H2" />
+                                    <path d="M3 21c0-2.1 1.7-3.9 3.8-4" />
+                                    <path d="M20.97 5c0 2.1-1.6 3.8-3.5 4" />
+                                    <path d="M22 13h-4" />
+                                    <path d="M17.2 17c2.1.1 3.8 1.9 3.8 4" />
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-sm text-slate-200">Mundo Macro</h4>
+                        </div>
+                        <div
+                            class="bg-slate-800 p-4 rounded-lg border border-slate-700 text-center hover:bg-slate-750 transition-colors">
+                            <div
+                                class="mx-auto bg-slate-700 w-12 h-12 rounded-full flex items-center justify-center mb-3 text-amber-500">
+                                <!-- SoccerIcon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m4.93 4.93 4.24 4.24" />
+                                    <path d="m14.83 9.17 4.24-4.24" />
+                                    <path d="m14.83 14.83 4.24 4.24" />
+                                    <path d="m9.17 14.83-4.24 4.24" />
+                                    <circle cx="12" cy="12" r="2" />
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-sm text-slate-200">Fútbol</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA / ÁLBUMES -->
+    <section id="galeria" class="py-20 bg-slate-950">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+                <div>
+                    <h2 class="text-4xl font-bold mb-2 serif text-white">Galería de Fotos</h2>
+                    <p class="text-slate-400">Selecciona un álbum para explorar</p>
+                </div>
+                <button id="openUploadModal"
+                    class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white px-4 py-2 rounded-lg transition-all">
+                    <i data-lucide="upload" class="w-4 h-4"></i>
+                    <span>Subir Nueva Foto</span>
+                </button>
+            </div>
+
+            <!-- Filters -->
+            <div class="flex flex-wrap gap-2 mb-10">
+                <button data-tab="todos"
+                    class="tab-btn px-6 py-2 rounded-full text-sm font-medium transition-all bg-amber-600 text-white shadow-lg shadow-amber-900/50">Todas
+                    las Fotos</button>
+                <button data-tab="pajaros"
+                    class="tab-btn px-6 py-2 rounded-full text-sm font-medium transition-all bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-white border border-slate-800">Pájaros</button>
+                <button data-tab="macro"
+                    class="tab-btn px-6 py-2 rounded-full text-sm font-medium transition-all bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-white border border-slate-800">Macro
+                    & Naturaleza</button>
+                <button data-tab="futbol"
+                    class="tab-btn px-6 py-2 rounded-full text-sm font-medium transition-all bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-white border border-slate-800">Fútbol</button>
+            </div>
+
+            <!-- Grid -->
+            <div id="galleryGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- JS will populate this -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6 max-w-2xl text-center">
+            <h2 class="text-3xl font-bold mb-8 serif text-white">¿Te gustó mi trabajo?</h2>
+            <p class="text-slate-300 mb-8">
+                Siempre estoy buscando nuevos lugares para fotografiar.
+                Sígueme en redes o contáctame directamente.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+
+                <a href="https://facebook.com/manuel.pereira.948494" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center gap-2 bg-slate-800 text-white border border-slate-700 hover:border-amber-500 hover:text-amber-500 px-8 py-3 rounded-lg transition-all font-medium group">
+                    <i data-lucide="facebook" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                    <span>Facebook</span>
+                </a>
+
+                <a href="mailto:mapesi9515@gmail.com"
+                    class="flex items-center gap-2 border border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white px-8 py-3 rounded-lg transition-colors font-medium">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    <span>Enviar un Correo</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- UPLOAD MODAL -->
+    <div id="uploadModal"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 hidden">
+        <div
+            class="bg-slate-800 rounded-lg shadow-xl w-full max-w-md relative border border-slate-700 max-h-[90vh] overflow-y-auto">
+            <button id="closeUploadModal" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+
+            <div class="p-6">
+                <h3 class="text-2xl font-bold text-white mb-1 serif">Subir Nueva Foto</h3>
+                <p class="text-slate-400 text-sm mb-6">Añade una foto a tu colección personal.</p>
+
+                <form id="uploadForm" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Título de la Foto</label>
+                        <input type="text" id="photoTitle" required
+                            class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 placeholder-slate-500"
+                            placeholder="Ej: Colibrí en vuelo" />
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Álbum</label>
+                        <select id="photoCategory"
+                            class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-amber-500">
+                            <option value="pajaros">Pájaros</option>
+                            <option value="macro">Macro (Insectos/Plantas)</option>
+                            <option value="futbol">Fútbol</option>
+                        </select>
+                    </div>
+
+                    <!-- DESCRIPCIÓN CON IA -->
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1 flex justify-between">
+                            <span>Descripción</span>
+                            <span class="text-xs text-amber-500 font-bold flex items-center gap-1">
+                                <i data-lucide="sparkles" class="w-3 h-3"></i> Powered by Gemini
+                            </span>
+                        </label>
+                        <div class="flex gap-2">
+                            <textarea id="photoDescription"
+                                class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-amber-500 text-sm min-h-[80px]"
+                                placeholder="Escribe una descripción o genérala con IA..."></textarea>
+                        </div>
+                        <button type="button" id="generateDescBtn"
+                            class="mt-2 w-full flex items-center justify-center gap-2 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-all bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg hover:shadow-indigo-500/30">
+                            <i data-lucide="sparkles" class="w-3 h-3"></i> ✨ Generar Historia con IA
+                        </button>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Imagen</label>
+                        <div id="fileDropZone"
+                            class="border-2 border-dashed border-slate-700 rounded-lg p-6 text-center cursor-pointer hover:border-amber-500 hover:bg-slate-900/50 transition-colors">
+                            <div id="previewContainer">
+                                <!-- Preview or placeholder -->
+                            </div>
+                        </div>
+                        <input type="file" id="fileInput" accept="image/*" class="hidden" />
+                    </div>
+
+                    <button type="submit" id="submitPhotoBtn" disabled
+                        class="w-full py-3 rounded-lg font-bold text-white transition-colors mt-4 bg-slate-700 cursor-not-allowed text-slate-400">
+                        Publicar Foto
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDGET DE CHAT -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        <div id="chatWidget"
+            class="bg-slate-800 border border-slate-700 rounded-lg shadow-2xl w-80 h-96 mb-4 flex flex-col overflow-hidden fade-in hidden">
+            <div class="bg-slate-900 p-3 border-b border-slate-700 flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                    <span class="font-bold text-white text-sm">Chat con Manuel (IA)</span>
+                </div>
+                <button id="chatCloseBtn" class="text-slate-400 hover:text-white">
+                    <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
+            </div>
+
+            <div id="chatMessages" class="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-800">
+                <!-- Messages will be injected here -->
+            </div>
+
+            <form id="chatForm" class="p-3 bg-slate-900 border-t border-slate-700 flex gap-2">
+                <input type="text" id="chatInput" placeholder="Escribe tu pregunta..."
+                    class="flex-1 bg-slate-800 text-white text-sm rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-amber-500" />
+                <button type="submit"
+                    class="bg-amber-600 text-white p-2 rounded-md hover:bg-amber-700 transition-colors">
+                    <i data-lucide="send" class="w-4 h-4"></i>
+                </button>
+            </form>
+        </div>
+
+        <button id="chatToggleBtn"
+            class="bg-amber-600 hover:bg-amber-700 text-white p-4 rounded-full shadow-lg transition-transform hover:scale-105 flex items-center gap-2">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+            <span class="font-bold hidden md:inline ml-2">Pregúntale a Manuel</span>
+        </button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
